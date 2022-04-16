@@ -50,14 +50,15 @@ form.onsubmit = async (event) => {
     alertBox.innerHTML = data.message;
   }
   if (data._id) {
-    window.location.href = "/client/userDashboard/index.html?id=" + data._id;
+    window.location.href =
+      "/websitesecurityfinal/userDashboard/index.html?id=" + data._id;
   }
 
   console.log("clicked");
 };
 
 login.onclick = () => {
-  window.location.href = "/client/login/login.html";
+  window.location.href = "/websitesecurityfinal/login/login.html";
 };
 
 const base64 = (file) => {

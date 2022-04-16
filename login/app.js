@@ -37,14 +37,15 @@ form.onsubmit = async (event) => {
   if (data._id) {
     if (data.isAdmin) {
       localStorage.setItem("adminLogedIn", true);
-      window.location.href = "/client/adminDashboard/index.html";
+      window.location.href = "/websitesecurityfinal/adminDashboard/index.html";
     } else {
-      window.location.href = "/client/userDashboard/index.html?id=" + data._id;
+      window.location.href =
+        "/websitesecurityfinal/userDashboard/index.html?id=" + data._id;
       localStorage.setItem("adminLogedIn", false);
     }
   }
 };
 
 signUp.onclick = () => {
-  window.location.href = "/client/signup/signup.html";
+  window.location.href = "/websitesecurityfinal/signup/signup.html";
 };

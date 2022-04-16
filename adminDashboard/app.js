@@ -3,7 +3,7 @@ const btn = document.querySelector(".logout");
 
 btn.onclick = () => {
   localStorage.setItem("adminLogedIn", "false");
-  window.location.href = "/client/index.html";
+  window.location.href = "/websitesecurityfinal/index.html";
 };
 
 //THIS FUNCTION WILL FETCH ALL THE USERS AND RENDER THEM..
@@ -121,7 +121,7 @@ async function renderAllUsers(param, searchData) {
     trr[i].onclick = () => {
       console.log(trr[i].classList.value);
       window.location.href =
-        "/client/adminDashboard/singleUser/index.html?id=" +
+        "/websitesecurityfinal/adminDashboard/singleUser/index.html?id=" +
         trr[i].classList.value;
     };
   }
