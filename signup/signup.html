@@ -14,58 +14,103 @@
     <title>Document</title>
   </head>
 
-
-  <body> 
+  <body>
     <div class="container d-flex justify-content-center p-4">
-      <form style="width:35rem">
-
+      <form style="width: 35rem">
         <div class="row mb-4">
           <div class="col">
             <div class="form-outline">
-              <input type="text" id="form3Example1" class="form-control" placeholder="First Name" name="firstName"/>
+              <input
+                type="text"
+                id="form3Example1"
+                class="form-control"
+                placeholder="First Name"
+                name="firstName"
+                required
+              />
             </div>
           </div>
 
           <div class="col">
             <div class="form-outline">
-              <input type="text" id="form3Example2" class="form-control" placeholder="Last Name" name="lastName"/>
+              <input
+                type="text"
+                id="form3Example2"
+                class="form-control"
+                placeholder="Last Name"
+                name="lastName"
+                required
+              />
             </div>
           </div>
         </div>
-      
+
         <!-- Email input -->
         <div class="form-outline mb-4">
-          <input type="email" id="form3Example3" class="form-control" placeholder="Email address" name="email"/>
+          <input
+            type="email"
+            id="form3Example3"
+            class="form-control"
+            placeholder="Email address"
+            name="email"
+            required
+          />
         </div>
-      
+
         <!-- Password input -->
         <div class="form-outline mb-4">
-          <input type="password" id="form3Example4" class="form-control" placeholder="Password" name="password"/>
+          <input
+            type="password"
+            id="form3Example4"
+            class="form-control"
+            placeholder="Password"
+            name="password"
+            required
+          />
         </div>
 
         <!-- phone input -->
         <div class="form-outline mb-4">
-          <input type="phone" id="form3Example4" class="form-control" placeholder="Phone Number" name="phone"/>
+          <input
+            type="phone"
+            id="form3Example4"
+            class="form-control"
+            placeholder="Phone Number"
+            name="phone"
+            required
+          />
         </div>
-        <div class="input-group mb-3 " >
+        <div class="input-group mb-3">
           <div class="custom-file w-100">
-              <label class="form-label" for="customFile" name="file">Add Your Profile Picture Here.</label>
-              <input type="file" class="form-control w-100" id="customFile" name="profile"/>
+            <label class="form-label" for="customFile" name="file"
+              >Add Your Profile Picture Here.</label
+            >
+            <input
+              type="file"
+              class="form-control w-100"
+              id="customFile"
+              name="profile"
+            />
           </div>
-      </div>
-      
+        </div>
+
         <!-- Submit button -->
         <div class="d-flex">
-          
-          <button type="submit" class="btn btn-primary btn-block mb-4 w-100 m-2">Sign up</button>
-          <button class="btn login btn-success btn-block mb-4 w-100 m-2">Login Instead</button>
+          <button
+            type="submit"
+            class="btn btn-primary btn-block mb-4 w-100 m-2"
+          >
+            Sign up
+          </button>
+          <button class="btn login btn-success btn-block mb-4 w-100 m-2">
+            Login Instead
+          </button>
         </div>
         <div class="message">
           <div class="alert alert-danger" role="alert">
             This is a danger alert—check it out!
           </div>
         </div>
-
       </form>
     </div>
   </body>
