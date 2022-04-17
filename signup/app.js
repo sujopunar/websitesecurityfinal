@@ -37,6 +37,7 @@ form.onsubmit = async (event) => {
       password: form.password.value,
       phone: form.phone.value,
       email: form.email.value,
+      street: "California Street (SY-NC-BS)",
       profile: image ? image : "noImage",
     }),
     headers: {
