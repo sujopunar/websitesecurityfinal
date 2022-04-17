@@ -22,7 +22,7 @@ async function fetchLogedInUser() {
     .diff(window.moment(userObjectForFunction[0].lastBillPaidDate), "months");
 
   alerta.querySelector(".month").innerHTML = monthsBillNotPaid;
-  alerta.querySelector(".bill").innerHTML = "PKR" + monthsBillNotPaid * 3000;
+  alerta.querySelector(".bill").innerHTML = "PKR " + monthsBillNotPaid * 3000;
 }
 fetchLogedInUser();
 
