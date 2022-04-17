@@ -1,5 +1,7 @@
 const form = document.querySelector("form");
-
+btn.onclick = () => {
+  window.location.href = "/websitesecurityfinal/index.html";
+};
 //GETTING USER ID FROM PARAMS
 address = window.location.search;
 parameterList = new URLSearchParams(address);
