@@ -51,16 +51,14 @@ form.onsubmit = async (event) => {
   }
   if (data._id) {
     window.location.href =
-      "https://streetsecurity.herokuapp.com/userDashboard/index.html?id=" +
-      data._id;
+      "/websitesecurityfinal/userDashboard/index.html?id=" + data._id;
   }
 
   console.log("clicked");
 };
 
 login.onclick = () => {
-  window.location.href =
-    "https://streetsecurity.herokuapp.com/login/login.html";
+  window.location.href = "/websitesecurityfinal/login/login.html";
 };
 
 const base64 = (file) => {
