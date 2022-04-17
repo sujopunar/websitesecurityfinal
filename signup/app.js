@@ -24,7 +24,7 @@ form.onsubmit = async (event) => {
   ) {
     console.log(alertBox);
     alertBox.style.display = "block";
-    alertBox.innerHTML = "Please Inter All fields";
+    alertBox.innerHTML = "Please Enter All fields";
     return;
   }
 
@@ -37,6 +37,7 @@ form.onsubmit = async (event) => {
       password: form.password.value,
       phone: form.phone.value,
       email: form.email.value,
+      street: "California Street (SY-NC-BS)",
       profile: image ? image : "noImage",
     }),
     headers: {
@@ -50,14 +51,16 @@ form.onsubmit = async (event) => {
   }
   if (data._id) {
     window.location.href =
-      "/websitesecurityfinal/userDashboard/index.html?id=" + data._id;
+      "https://streetsecurity.herokuapp.com/userDashboard/index.html?id=" +
+      data._id;
   }
 
   console.log("clicked");
 };
 
 login.onclick = () => {
-  window.location.href = "/websitesecurityfinal/login/login.html";
+  window.location.href =
+    "https://streetsecurity.herokuapp.com/login/login.html";
 };
 
 const base64 = (file) => {
