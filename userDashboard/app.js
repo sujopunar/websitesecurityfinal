@@ -1,4 +1,5 @@
 const form = document.querySelector("form");
+const btn = document.querySelector(".logout");
 btn.onclick = () => {
   window.location.href = "/websitesecurityfinal/index.html";
 };
