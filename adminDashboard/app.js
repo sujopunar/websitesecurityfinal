@@ -69,7 +69,7 @@ async function renderAllUsers(param, searchData) {
               <p class="text-muted mb-0">${userData[k].phone}</p>
               </td>
               <td>${duration} Months</td>
-              <td>${userData[k].street}</td>
+
               <td>
                   <span style="background:${
                     duration > 0 ? "red" : "green"

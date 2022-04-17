@@ -27,7 +27,6 @@ async function fetchSingleUser() {
   style="width: 150px"
 />
 <h5 class="my-3">${profileData.firstName}</h5>
-<p class="text-muted mb-4">${profileData.street}</p>
 <div class="d-flex justify-content-center mb-2">
   <button type="button" class="btn btn-primary reject">Reject</button>
   <button type="button" class="btn btn-outline-primary ms-1 approve">
@@ -70,16 +69,7 @@ async function fetchSingleUser() {
   </div>
 </div>
 <hr />
-<div class="row">
-  <div class="col-sm-3">
-    <p class="mb-0">Street</p>
-  </div>
-  <div class="col-sm-9">
-    <p class="street text-muted mb-0">${
-      profileData.street ? profileData.street : "Bay Area, San Francisco, CA"
-    }</p>
-  </div>
-</div>
+
   `;
 
   console.log(profileData);
