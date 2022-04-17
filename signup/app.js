@@ -24,7 +24,7 @@ form.onsubmit = async (event) => {
   ) {
     console.log(alertBox);
     alertBox.style.display = "block";
-    alertBox.innerHTML = "Please Enter All fields";
+    alertBox.innerHTML = "Please Inter All fields";
     return;
   }
 
